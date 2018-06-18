@@ -1,0 +1,90 @@
+body {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* main wrapper */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Header styles */
+header{
+    width: 100%;
+    order: 1;
+    padding: 10px;
+}
+header .container {
+    display: flex;
+}
+header .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+}
+header .left-col {
+    width: 30%;
+    float: left;
+}
+header .right-col {
+    width: 70%;
+    margin-top: 20px;
+    text-align: right;
+    float: right;
+    line-height: 1;
+    text-transform: uppercase;    
+}
+header .right-col .name {
+    font-weight: 100;
+    font-size: 2.6em;
+    color: #2d3c49;
+    letter-spacing: 2px;
+}
+header .right-col .job-title {
+    display: inline;
+    font-size: 1.4em;
+    color: #2d3c49;
+}
+
+/* Line style */
+.wrapper .line {
+    width: 100%;
+    border-bottom: 4px solid #7d97ad;
+    order: 2;
+}
+
+/* main styles */
+main {
+    order: 3;
+    padding-top: 20px;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+main .code-image {
+    order: 1;
+    width: 100%;
+}
+main .featured-work {
+    order: 2;
+    width: 100%;
+}
+main .featured-work h1{
+    font-weight: 500;
+    color: #7d97ad;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+}
+
+
