@@ -45,14 +45,12 @@ header .right-col {
     text-transform: uppercase;    
 }
 header .right-col .name {
-    font-weight: 100;
-    font-size: 2.6em;
+    font-size: 2.4em;
     color: #2d3c49;
-    letter-spacing: 2px;
 }
 header .right-col .job-title {
     display: inline;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #2d3c49;
 }
 
