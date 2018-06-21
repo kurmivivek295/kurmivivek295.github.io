@@ -9,45 +9,60 @@ img {
     max-width: 100%;
 }
 
-
 /* main wrapper */
+
 .wrapper {
     display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-wrap: wrap;
-    margin-left: 15px;
-    margin-right: 15px;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Header styles */
-header{
+
+header {
     width: 100%;
     order: 1;
-    padding: 10px;
+    padding: 10px 0;
 }
+
 header .container {
     display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
 }
+
 header .logo {
     width: 100px;
     height: 100px;
+    border: 4px solid #02b3e4;
     border-radius: 60px;
 }
+
 header .left-col {
     width: 30%;
     float: left;
 }
+
 header .right-col {
     width: 70%;
-    margin-top: 20px;
+    margin-top: 25px;
     text-align: right;
     float: right;
     line-height: 1;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
+
 header .right-col .name {
     font-size: 2.4em;
     color: #2d3c49;
+    font-weight: 10;
 }
+
 header .right-col .job-title {
     display: inline;
     font-size: 1.2em;
@@ -55,6 +70,7 @@ header .right-col .job-title {
 }
 
 /* Line style */
+
 .wrapper .line {
     width: 100%;
     border-bottom: 4px solid #7d97ad;
@@ -62,27 +78,182 @@ header .right-col .job-title {
 }
 
 /* main styles */
+
 main {
     order: 3;
     padding-top: 20px;
 }
+
 .main-container {
     display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
 }
+
 main .code-image {
     order: 1;
     width: 100%;
+    max-width: 100%;
 }
+
 main .featured-work {
     order: 2;
     width: 100%;
 }
-main .featured-work h1{
+
+main .featured-work h1 {
     font-weight: 500;
     color: #7d97ad;
     letter-spacing: 2px;
     font-size: 2.2em;
 }
 
+/* Featured Work Section Styles */
 
+#cards {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: -10px 0 0 0;
+}
+
+#cards .item {
+    width: 32%;
+}
+
+#cards .item img {
+    margin: 0;
+    padding: 0;
+}
+
+#cards .item .text-block {
+    margin: 10px 0;
+    line-height: 0.5;
+}
+
+#cards .item .text-block .title {
+    text-transform: uppercase;
+    color: #2d3c49;
+    font-size: 28px;
+    letter-spacing: 0.5;
+}
+
+/* Footer */
+
+footer {
+    order: 4;
+    text-align: center;
+    width: 100%;
+    background: #7d97ad;
+    margin: 15px 0 0 0;
+}
+
+footer strong {
+    color: #02b3e4;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+    header .logo {
+        width: 60px;
+        height: 60px;
+        border: 3px solid #02b3e4;
+        border-radius: 40px;
+    }
+    header .right-col {
+        margin-top: 12px;
+        line-height: 1;
+    }
+    header .right-col .name {
+        font-size: 2em;
+    }
+    header .right-col .job-title {
+        font-size: 1.05em;
+    }
+    #cards {
+        display: block;
+    }
+    #cards .item {
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+    header .logo {
+        width: 80px;
+        height: 80px;
+        border: 4px solid #02b3e4;
+        border-radius: 60px;
+    }
+    header .right-col {
+        margin-top: 16px;
+        line-height: 1;
+    }
+    header .right-col .name {
+        font-size: 2.2em;
+        letter-spacing: 1px;
+    }
+    header .right-col .job-title {
+        font-size: 1.2em;
+    }
+    #cards .item {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    header .logo {
+        width: 100px;
+        height: 100px;
+        border: 4px solid #02b3e4;
+        border-radius: 80px;
+    }
+    header .right-col {
+        margin-top: 24px;
+        line-height: 1;
+    }
+    header .right-col .name {
+        font-size: 2.4em;
+        letter-spacing: 1px;
+    }
+    header .right-col .job-title {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    header .logo {
+        width: 130px;
+        height: 130px;
+        border: 4px solid #02b3e4;
+        border-radius: 80px;
+    }
+    header .right-col {
+        margin-top: 30px;
+        line-height: 1;
+    }
+    header .right-col .name {
+        font-size: 3.2em;
+        letter-spacing: 1px;
+    }
+    header .right-col .job-title {
+        font-size: 1.7em;
+    }
+    #cards .item .text-block .title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
