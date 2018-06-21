@@ -58,6 +58,8 @@ header .right-col {
 }
 
 header .right-col .name {
+    margin: 0;
+    padding: 0;
     font-size: 2.4em;
     color: #2d3c49;
     font-weight: 10;
@@ -104,7 +106,7 @@ main .featured-work {
     width: 100%;
 }
 
-main .featured-work h1 {
+main .featured-work h2 {
     font-weight: 500;
     color: #7d97ad;
     letter-spacing: 2px;
@@ -134,7 +136,7 @@ main .featured-work h1 {
 
 #cards .item .text-block {
     margin: 10px 0;
-    line-height: 0.5;
+    line-height: 0.2;
 }
 
 #cards .item .text-block .title {
@@ -142,6 +144,7 @@ main .featured-work h1 {
     color: #2d3c49;
     font-size: 28px;
     letter-spacing: 0.5;
+    font-weight: 100;
 }
 
 /* Footer */
